@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import TodoForm from './TodoForm';
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { MdOutlineEdit } from "react-icons/md";
-
+import './Todo.css';
 
 
 function Todo({todos, completeTodo, removeTodo, updateTodo}) {
