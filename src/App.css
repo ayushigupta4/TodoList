@@ -9,3 +9,15 @@ h1{
   color: #000;;
   padding: 10px;
 }
+
+label {
+  font-size: 1.5em;
+  font-weight: 400;
+  padding: 10px;
+}
+
+.weather-details {
+  display: flex;
+  justify-content: space-around;
+}
+
