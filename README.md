@@ -68,3 +68,18 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+#Feature implemented
+ 
+1. Task Management:
+    a. Add Task: Users can add tasks with details such as title, description, due date, and priority.
+    b. View Task: All tasks are displayed in a list format with options to view details.
+    c. Update Task: Users can edit task details like title, description, due date, and priority.
+    d. Delete Task: Tasks can be deleted individually.
+2. Local Storage: Utilizes browser's local storage for persistent storage, ensuring tasks remain saved even    after closing the app or refreshing the page.
+3. Responsive Design: The app is designed to adapt and function seamlessly across various devices and screen sizes, providing an optimal user experience.
+4. Weather Integration:
+    a. Search City: Users can search for a particular city to check the weather.
+    b. API Integration: The app integrates with a weather API to fetch real-time weather information based on the searched city.
+    c. Display Weather: Weather information such as temperature, humidity, and weather condition is displayed within the app.
+
