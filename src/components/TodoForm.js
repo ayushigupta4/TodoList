@@ -2,12 +2,12 @@ import React, {useState, useEffect, useRef} from 'react';
 import './TodoForm.css';
 
 function TodoForm(props) {
-    const [input, setInput] = useState('');
+    const [input, setInput] = useState(props.edit ? props.edit.value : '');
 
     const inputRef = useRef(null);
 
     useEffect(() => {
-        inputRef.current.focus()
+        inputRef.current.focus();
     })
 
     const handleSubmit = e => {
@@ -29,15 +29,32 @@ function TodoForm(props) {
 
         <div className='box'>
             <form className='todo-form' onSubmit={handleSubmit}>
-            <input 
-                type="text" 
-                placeholder="Add a Task" 
-                value={input} 
-                name="text" 
-                className='todo-input' 
-                onChange={handleChange}
-                ref={inputRef}/>
-            <button className='todo-button'>+</button>
+                {props.edit? (
+                    <>
+                        <input 
+                        type="text" 
+                        placeholder="Update Task" 
+                        value={input} 
+                        name="text" 
+                        className='todo-input' 
+                        onChange={handleChange}
+                        ref={inputRef}/>
+                        <button className='todo-button'>+</button>
+                    </>
+                ): (
+                    <>
+                        <input 
+                            type="text" 
+                            placeholder="Add a Task" 
+                            value={input} 
+                            name="text" 
+                            className='todo-input' 
+                            onChange={handleChange}
+                            ref={inputRef}/>
+                        <button className='todo-button'>+</button>
+                    </>
+                )}
+            
 
             </form>
         
